@@ -15,7 +15,7 @@ export default function App() {
       if (res.status === 200) {
         console.log('success');
         setProducts(res.data.products);
-        setTotalPages(res.data.total / 10);
+        setTotalPages(Math.ceil(res.data.total / 10));
       }
     } catch (error) {
       console.log(error);
