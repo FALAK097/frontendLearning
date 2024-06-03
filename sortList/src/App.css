@@ -1,0 +1,40 @@
+body {
+  background-color: #333;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sortList {
+  max-width: 300px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #fff;
+  border: 2px solid #106ecc;
+  border-radius: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sortList h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #106ecc;
+  margin: 0;
+}
+
+.person {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.person p {
+  border: 1px solid #106ecc;
+  padding: 0.5rem;
+  border-radius: 5px;
+  cursor: move;
+  margin: 0;
+}
