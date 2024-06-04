@@ -2,7 +2,7 @@
 // https://learnersbucket.com/examples/interview/search-with-pagination-in-reactjs/
 import { useState, useEffect } from 'react';
 
-const API_URL = `https://api.punkapi.com/v2/beers`;
+const API_URL = `https://api.openbrewerydb.org/v1/breweries`;
 const PERPAGE = 25;
 
 export default function App() {
@@ -65,12 +65,11 @@ export default function App() {
   );
 }
 
-const Beer = ({ name, tagline, image_url }) => {
+const Beer = ({ name, brewery_type }) => {
   return (
     <div>
       <h2>{name}</h2>
-      <p>{tagline}</p>
-      <img src={image_url} alt={name} width="100px" />
+      <p>{brewery_type}</p>
     </div>
   );
 };
