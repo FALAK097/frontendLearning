@@ -98,6 +98,17 @@ loadScript('https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.js')
 // This means a closure can remember and access variables and arguments of its outer function even after the function has finished.
 // A closure is created when an inner function is returned from an outer function.
 
+function outer() {
+  const outerVar = 'I am from outer function';
+
+  function inner() {
+    console.log(outerVar);
+  }
+  return inner();
+}
+const c = outer();
+c;
+
 // Currying in JavaScript
 // Currying is a technique of evaluating function with multiple arguments, into sequence of functions with single argument.
 // In other words, when a function, instead of taking all arguments at one time, takes the first one and return a new function that takes the second one and returns a new function which takes the third one, and so forth, until all arguments have been fulfilled.

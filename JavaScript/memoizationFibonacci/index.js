@@ -1,3 +1,4 @@
+// Fibonacci sequence is a sequence of numbers in which each number is the sum of the two preceding ones, usually starting with 0 and 1.
 class FibonacciMemoizer {
   constructor() {
     this.cache = {};
